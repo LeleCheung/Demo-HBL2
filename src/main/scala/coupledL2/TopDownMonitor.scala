@@ -175,6 +175,7 @@ class TopDownMonitor()(implicit p: Parameters) extends L2Module {
   // FIXME lyq: it's abnormal l2prefetchLate / l2prefetchUseful is more than 1
   val l2prefetchLate = io.latePF
 
+  /*
   // PF Accuracy
   XSPerfRolling(
     "L2PrefetchAccuracy",
@@ -280,4 +281,6 @@ class TopDownMonitor()(implicit p: Parameters) extends L2Module {
   XSPerfAccumulate("l2prefetchUsefulTP", PopCount(l2prefetchUsefulTP))
   XSPerfAccumulate("l2demandRequest", PopCount(l2demandRequest))
   XSPerfAccumulate("l2prefetchLate", PopCount(l2prefetchLate))
+
+  */
 }
